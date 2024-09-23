@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.dropdown-toggle  {
+    visibility: hidden;
+}
+
 header {
     background: url("./Img/Logo/bg.png");
     background-size: cover;
@@ -11,109 +15,94 @@ header {
 }
 
 header nav {
-    padding: 3% 0% ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px ;
 }
 
 header nav ul {
     display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
 
-header nav ul div#div {
-    margin-right: 15%;
-}
-
-header nav ul img{
+header nav img{
     max-height: 50px;
 }
 
 header nav ul li{
     list-style: none;
-    margin-left: 3%;
+    margin: 0% 1%;
 }
 
-header nav ul li a#a {
+header nav ul li a {
     color: white;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: color 0.3s ease-in-out;
 }
 
-header nav ul li a#a:hover {
+header nav ul li a:hover {
     color: rgb(2, 129, 140);
 }
 
-header nav ul li a#a:focus {
+header nav ul li a:focus {
     color: rgb(2, 129, 140);
-}
-
-header nav ul li.li {
-    margin-left: 15%;
-}
-
-header nav ul li.li a.a {
-    color: white;
-    font-family: sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
-    transition: 0.3s ease-in-out;
-    padding: 0.7em 1em;
-    background: rgb(2, 129, 140);
-    border-radius: 10px;
-    border: 2px solid transparent;
-}
-
-header nav ul li.li a.a:focus {
-    background: transparent;
-    border-color: rgb(2, 129, 140);
-}
-
-header nav ul li.li a.a:hover {
-    background: transparent;
-    border-color: rgb(2, 129, 140);
 }
 
 /* styling for hero section */
 
-header section.hero {
+section.hero {
+    background: url("./Img/Logo/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
     font-family: sans-serif;
+    margin-top: -1%;
+    position: relative;
+    padding: 3%; 
 }
 
-header section.hero div.row{
+section.hero div.row{
     display: flex;
     flex-wrap: wrap;
 }
 
-header section.hero div.row div.col {
+section.hero div.row div.col {
     color: #cfcfcf;
     flex: 1;
 }
 
-header section.hero div.row div.col h4 {
+section.hero div.row div.col h4 {
     font-size: 25px;
     padding: 1% 0%;
 }
 
-header section.hero div.row div.col h3 {
+section.hero div.row div.col h3 {
     font-size: 30px;
     padding-bottom: 3%;
 }
 
-header section.hero div.row div.col h1 {
+section.hero div.row div.col h1 {
     font-size: 60px;
     color: #02818c;
     padding-bottom: 3%;
 }
 
-header section.hero div.row div.col div.social-links {
+section.hero div.row div.col div.social-links {
     padding-bottom: 3%;
 }
 
-header section.hero div.row div.col div.btn {
+section.hero div.row div.col div.btn {
     padding-bottom: 3%;
 }
 
-header section.hero div.row div.col div.btn button {
+section.hero div.row div.col div.btn button {
     background: transparent;
     border: 2px solid #02818c;
     color: #fff;
@@ -121,23 +110,23 @@ header section.hero div.row div.col div.btn button {
     transition: background 0.3s ease-in-out;
 }
 
-header section.hero div.row div.col div.btn button  a {
+section.hero div.row div.col div.btn button  a {
     color: #fff;
 }
 
-header section.hero div.row div.col div.btn button:hover {
+section.hero div.row div.col div.btn button:hover {
     background: #02818c;
 }
 
-header section.hero div.row div.col div.btn button:focus {
+section.hero div.row div.col div.btn button:focus {
     background: #02818c;
 }
 
-header section.hero div.row div.col img {
+section.hero div.row div.col img {
     height: 614px;
 }
 
-header section.hero div.row div.col div.experience {
+section.hero div.row div.col div.experience {
     background: #00000093;
     border-radius: 5px;
     width: fit-content;
@@ -146,19 +135,19 @@ header section.hero div.row div.col div.experience {
     padding: 2%;
 }
 
-header section.hero div.row div.col div.experience div.col {
+section.hero div.row div.col div.experience div.col {
     width: fit-content;
     padding: 1% 5%;
     flex: 1;
     font-weight: bold;
 }
 
-header section.hero div.row div.col div.experience div.border-1 {
+section.hero div.row div.col div.experience div.border-1 {
     border-radius: 2px;
     border-right: 2px solid #cfcfcf;
 }
 
-header section.hero div.row div.col div.experience p.num {
+section.hero div.row div.col div.experience p.num {
     color: #02818c;
     padding-bottom: 2%;
 }
@@ -168,6 +157,7 @@ section.services {
     padding: 3%;
     text-align: center;
     font-family: sans-serif;
+    z-index: 1;
 }
 
 section.services h2 {
@@ -222,6 +212,9 @@ section.about {
     padding: 3%;
     text-align: center;
     font-family: sans-serif;
+    background: url("./Img/Logo/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 section.about h2 {
