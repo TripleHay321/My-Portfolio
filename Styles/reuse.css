@@ -1,7 +1,14 @@
 body {
     background: #1d1d1d;
     color: #fff;
+    z-index: 0;
 }
+
+section {
+    padding: 0% 3%;
+    z-index: 1;
+}
+
 
 .btn-normal {
     border-radius: 10px;
