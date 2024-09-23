@@ -8,89 +8,89 @@
     <link rel="stylesheet" href="./Styles/style.css">
     <link rel="stylesheet" href="./Styles/animation.css">
     <link rel="stylesheet" href="./Styles/reuse.css">
+    <link rel="stylesheet" href="./Styles/responsive.css">
+    <link rel="stylesheet" href="./Styles/drop-down.css">
 </head>
 <body>
-    <header class="fade-in">
+    <header>
         <nav>
-            <ul>
-                <div id="div">
-                    <a href="#"><img src="./Styles/Img/Logo/LOGO.png" alt=""></a>
-                </div>
-                <li ><a href="#" id="a">Home</a></li>
-                <li ><a href="#" id="a">Services</a></li>
-                <li ><a href="#" id="a">About me</a></li>
-                <li ><a href="#" id="a">Portfolio</a></li>
-                <li ><a href="#" id="a">Contact me</a></li>
-                <li class="li"><a href="#" class="a">Contact me</a></li>
+            <a href="#"><img src="./Styles/Img/Logo/LOGO.png" alt=""></a>
+            <button class="dropdown-toggle">Menu</button>
+            <ul class="dropdown-menu">
+                <li><a href="#" class="scroll-link" data-target="hero2">Home</a></li>
+                <li><a href="#" class="scroll-link" data-target="services2">Services</a></li>
+                <li><a href="#" class="scroll-link" data-target="about2">About me</a></li>
+                <li><a href="#" class="scroll-link" data-target="portfolio">Portfolio</a></li>
+                <li><a href="#" class="scroll-link" data-target="contact2">Contact me</a></li>
             </ul>
         </nav>
-        <section class="hero">
-            <div class="row">
-                <div class="col">
-                    <h4>Hi I am</h4>
-                    <h3>Adeola Adekunle</h3>
-                    <h1>Front-End Developer Backend Developer & Python Engineer</h1>
-                    <div class="social-links">
-                        <div class="col">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
-                                </svg>
-                            </a>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
-                                </svg>
-                            </a>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
-                                </svg>
-                            </a>
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 14 14">
-                                    <g fill="none">
-                                        <g clip-path="url(#primeTwitter0)">
-                                            <path fill="#fff" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z" />
-                                        </g>
-                                        <defs>
-                                            <clipPath id="primeTwitter0">
-                                                <path fill="#fff" d="M0 0h14v14H0z" />
-                                            </clipPath>
-                                        </defs>
+    </header>
+    <section class="hero hero2 fade-in">
+        <div class="row">
+            <div class="col">
+                <h4>Hi I am</h4>
+                <h3>Adeola Adekunle</h3>
+                <h1>Front-End Developer Backend Developer & Python Engineer</h1>
+                <div class="social-links">
+                    <div class="col">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="#fff" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                <path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 14 14">
+                                <g fill="none">
+                                    <g clip-path="url(#primeTwitter0)">
+                                        <path fill="#fff" d="M11.025.656h2.147L8.482 6.03L14 13.344H9.68L6.294 8.909l-3.87 4.435H.275l5.016-5.75L0 .657h4.43L7.486 4.71zm-.755 11.4h1.19L3.78 1.877H2.504z" />
                                     </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="btn">
-                        <button type="submit" class="btn-normal">Hire Me</button>
-                        <button type="submit" class="btn-normal"><a href="./Styles/Files/My Resume 2.pdf">Download CV</a></button>
-                    </div>
-                    <div class="experience">
-                        <div class="col border-1">
-                            <p class="num">2+</p>
-                            <p class="text">Experiences</p>
-                        </div>
-                        <div class="col border-1">
-                            <p class="num">10+</p>
-                            <p class="text">Projects done</p>
-                        </div>
-                        <div class="col">
-                            <p class="num">15+</p>
-                            <p class="text">Happy Clients</p>
-                        </div>
+                                    <defs>
+                                        <clipPath id="primeTwitter0">
+                                            <path fill="#fff" d="M0 0h14v14H0z" />
+                                        </clipPath>
+                                    </defs>
+                                </g>
+                            </svg>
+                        </a>
                     </div>
                 </div>
-                <div class="col">
-                    <img src="./Styles/Img/Me/b-w me.png" alt="">
+                <div class="btn">
+                    <button type="submit" class="btn-normal">Hire Me</button>
+                    <button type="submit" class="btn-normal"><a href="./Styles/Files/My Resume 2.pdf">Download CV</a></button>
+                </div>
+                <div class="experience">
+                    <div class="col border-1">
+                        <p class="num">3+</p>
+                        <p class="text">Experiences</p>
+                    </div>
+                    <div class="col border-1">
+                        <p class="num">35+</p>
+                        <p class="text">Projects done</p>
+                    </div>
+                    <div class="col">
+                        <p class="num">20+</p>
+                        <p class="text">Happy Clients</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </header>
-    <section class="services section">
+            <div class="col">
+                <img src="./Styles/Img/Me/b-w me.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="services section services2">
         <h2>Services</h2>
-        <p>We offer good and qualify services like:</p>
+        <p class="sub">We offer good and qualify services like:</p>
         <div class="row">
             <div class="col">
                 <div class="icon">
@@ -103,7 +103,7 @@
                     </svg>
                 </div>
                 <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <p>Our  Web design service focus on creating visually stunning and user-friendly websites tailored to your brand. We offer custom layouts that enhance navigation and user experience, using color schemes and typography that reflect your identity. Our designs are fully responsive, ensuring seamless access across all devices.</p>
             </div>
             <div class="col">
                 <div class="icon">
@@ -112,7 +112,7 @@
                     </svg>
                 </div>
                 <h4>Front-End Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <p>Our Front-End Development services create engaging, responsive user interfaces for websites and applications. Utilizing HTML, CSS, and JavaScript, we design layouts and styles that enhance user experience. Our approach ensures that sites are visually appealing and accessible across all devices, maintaining functionality and performance.</p>
             </div>
             <div class="col">
                 <div class="icon">
@@ -124,7 +124,7 @@
                     </svg>
                 </div>
                 <h4>Backend Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <p>Our Flask backend development services leverage this micro-framework to build scalable and efficient web applications. Flask allows for rapid development, making it ideal for both small projects and large systems. We create RESTful APIs to facilitate communication between the front end and the server, ensuring smooth data exchange. </p>
             </div>
         </div>
         <div class="row">
@@ -145,7 +145,7 @@
                     </svg>
                 </div>
                 <h4>Script Writing</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <p>Our Python script writing services enable you to automate repetitive tasks and enhance productivity. We develop scripts for various applications, including data manipulation, file management, web scraping, and system automation. Our scripts are designed for clarity and maintainability, allowing for easy updates.</p>
             </div>
             <div class="col">
                 <div class="icon">
@@ -154,7 +154,7 @@
                     </svg>
                 </div>
                 <h4>Git and Version Control</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <p>Our Git and version control services provide a structured approach to tracking changes in your codebase, ensuring collaboration and consistency among team members. Using Git, we enable you to create branches for feature development, allowing parallel work without affecting the main codebase.</p>
             </div>
             <div class="col">
                 <div class="icon">
@@ -165,14 +165,14 @@
                         </g>
                     </svg>
                 </div>
-                <h4>Web Development</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam molestias soluta obcaecati, amet vero nostrum aliquid quas alias corporis eveniet illo? Distinctio eaque omnis quidem. Adipisci unde cupiditate error?</p>
+                <h4>APIs and Microservices</h4>
+                <p>Our APIs and microservices services help you design and implement modular applications that enhance functionality and scalability. By developing RESTful APIs, we facilitate seamless communication between different services, enabling them to work independently while interacting efficiently.</p>
             </div>
         </div>
     </section>
-    <section class="about section">
+    <section class="about section about2">
         <h2>About Me</h2>
-        <p>Web Developer And Python Programmer</p>
+        <p class="sub">Web Developer And Python Programmer</p>
         <div class="row">
             <div class="col-1">
                 <img src="./Styles/Img/Me/Me-About.png" alt="">
@@ -330,7 +330,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio section">
+    <section class="portfolio section portfolio2">
         <h2>Portfolio</h2>
         <div class="row">
             <div class="col">
@@ -347,9 +347,9 @@
             </div>
         </div>
     </section>
-    <section class="contact section">
+    <section class="contact section contact2">
         <h2>Contact me</h2>
-        <p>Cultivating Connections: Reach Out And Connect With Me</p>
+        <p class="sub">Cultivating Connections: Reach Out And Connect With Me</p>
         <div class="row">
             <div class="col">
                 <form action="#">
@@ -438,6 +438,6 @@
             <p>&copy; copyright adeola adekunle web devloper</p>
         </div>
     </footer>
+    <script src="./Scripts/script.js"></script>
 </body>
-<script src="./Scripts/script.js"></script>
 </html>
