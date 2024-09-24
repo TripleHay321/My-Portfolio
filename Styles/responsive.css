@@ -199,10 +199,18 @@ section.about div.row div.col-2 p {
        header nav img {
         height: 24px;
        }
+
+       section.about h3 {
+        font-size: 20px;
+       }
     
 }
 
 @media only screen and (max-width: 360px) {
+    section.about h3 {
+        font-size: 20px;
+    }
+    
     section.hero {
         padding-top: 25%;
     }
