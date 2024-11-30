@@ -394,6 +394,15 @@ section.portfolio div.row div.col a {
     font-size: 1.2em;
 }
 
+section.portfolio div.row div.col p {
+    color: #fff;
+    padding: 0.5% 2%;
+    width: 100%;
+    font-weight: light;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8em;
+}
+
 /* styling for contact */
 section.contact {
     padding: 3%;
